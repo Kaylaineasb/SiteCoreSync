@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Roboto&display=swap');
+:root {
+  --color-bg: #e0e1dd;
+  --color-text: #415a77;
+  --color-primary: #778da9;
+  --color-nav-bg: #778da9;
+  --color-nav-text: #e0e1dd;
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Reddit Mono", monospace;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar-nav .nav-link {
+  color: var(--color-bg);
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+  color: var(--color-primary);
+}
+#inicio{
+    height: 900px;
+    background-color: var(--color-primary);
+}
+
+h1{
+    font-size: 5rem !important;
+    color: var(--color-bg) !important;
+    font-weight: bolder !important;
+    animation: moveHeader 3s ease infinite;
+}
+h2{
+    color: #ffff !important;
+}
+#sobre .card img{
+    object-fit: contain;
+    height: 200px;
+}
+#nossoTime .card img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 300px;
+}
+#nossoTime .card{
+  max-height: 300px;
+}
+#projetos{
+    background-color: var(--color-text);
+    height: 900px;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical caso o conteúdo exceda a altura */
+    padding: 20px; /* Adiciona um espaço interno para os cards */
+}
+#divisao{
+    height: 50px;
+    background-color: #415a77;
+    /* border-bottom: solid 1px #e0e1dd; */
+}
+footer{
+    background-color: #415a77;
+    color: #e0e1dd;
+}
+.carousel-item img{
+  width: 100px;
+  height: 300px;
+  object-fit: cover;
+}
+
+@keyframes moveHeader {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
